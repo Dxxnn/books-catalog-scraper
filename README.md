@@ -67,7 +67,6 @@ ejecución. Consulta también [ETHICS.md](ETHICS.md).
 Requiere Python 3.10 o superior.
 
 ```bash
-git clone https://github.com/Dxxnn/books-catalog-scraper.git
 cd books-catalog-scraper
 python3 -m venv .venv
 source .venv/bin/activate
@@ -130,6 +129,28 @@ Las pruebas usan HTML sintético local y no hacen solicitudes externas:
 
 ```bash
 python -m unittest discover -s tests -v
+```
+
+## Publicación en GitHub
+
+Si el repositorio todavía no existe en GitHub, una sesión autenticada de
+GitHub CLI permite crearlo y publicar el commit local:
+
+```bash
+gh auth login
+gh auth status
+gh repo create Dxxnn/books-catalog-scraper \
+  --public \
+  --source=. \
+  --remote=origin \
+  --push \
+  --description "Responsible Python scraper for a public practice catalogue"
+```
+
+Después de publicarlo, otras personas podrán clonarlo con:
+
+```bash
+git clone https://github.com/Dxxnn/books-catalog-scraper.git
 ```
 
 ## Alcance y limitaciones

@@ -9,7 +9,7 @@ from urllib.parse import urlparse
 
 DEFAULT_USER_AGENT = (
     "DanielPortfolioScraper/1.0 "
-    "(+https://github.com/Dxxnn/books-catalog-scraper)"
+    "(+https://github.com/Dxxnn)"
 )
 
 
