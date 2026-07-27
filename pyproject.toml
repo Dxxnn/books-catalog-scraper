@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "books-catalog-scraper"
+version = "1.0.0"
+description = "Responsible scraper for the Books to Scrape practice catalog"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Daniel Lopez" }]
+dependencies = [
+  "beautifulsoup4>=4.12,<5",
+  "pandas>=2.0,<3",
+  "requests>=2.31,<3",
+]
+
+[project.scripts]
+books-catalog-scraper = "books_catalog_scraper.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
