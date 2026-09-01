@@ -1,5 +1,13 @@
 # Books Catalog Scraper
 
+<div align="center">
+
+[![Tests](https://github.com/Dxxnn/books-catalog-scraper/actions/workflows/tests.yml/badge.svg)](https://github.com/Dxxnn/books-catalog-scraper/actions/workflows/tests.yml)
+![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
+[![License: MIT](https://img.shields.io/badge/License-MIT-2EA44F.svg)](LICENSE)
+
+</div>
+
 Proyecto de portafolio en Python para extraer, limpiar y estructurar el catálogo
 público de [Books to Scrape](https://books.toscrape.com/), un sitio ficticio
 creado expresamente como entorno seguro de práctica para web scraping.
@@ -9,6 +17,10 @@ normaliza los registros con `pandas` y genera archivos CSV y JSON listos para
 análisis. La implementación incorpora comprobación de `robots.txt`, pausas
 entre solicitudes, reintentos moderados, límites de recorrido, logs y pruebas
 unitarias sin tráfico de red.
+
+<div align="center">
+  <img src="docs/books_catalog_preview.png" alt="Vista previa de los registros estructurados del catálogo de libros" width="100%">
+</div>
 
 ## Qué demuestra
 
